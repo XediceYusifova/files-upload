@@ -10,11 +10,10 @@ for($i=0;$i<count($Names);$i++){
     for($i=0;$i<count($Sizes);$i++){
         if($Sizes[$i]<1000000 && in_array($Types[$i],$TypeArray) ){
             move_uploaded_file($Tmps[$i],$Names[$i]);
-            echo "Ok\n";
+            echo "Ok</br>";
         }
         else{
-            echo  "$Names[$i]</br>";
-            echo 'We can\'t upload this files';
+            echo "We can\'t upload $Names[$i] files";
         }
     }
 }
